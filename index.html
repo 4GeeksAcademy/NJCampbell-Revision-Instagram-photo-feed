@@ -10,8 +10,9 @@
     <script src="https://kit.fontawesome.com/2360758ebf.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div class="wrapper">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand ms-5" href="#">
             <!-- <i class="fa-brands fa-instagram"></i> -->
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -24,25 +25,17 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="col-auto me-5">
-          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
-            <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            </ul> -->
+        
        
             <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createModal" type="submit">Create a New Post</button>
-            <!-- Example single danger button -->
+            
             <div class="btn-group">
               <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
                   <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
                 </svg>
             </button>
-            <!-- <nav class="navbar navbar-expand-lg bg-light">
-              <div class="container">
-                 <a href="#" class="navbar-brand"> <i class="bi bi-instagram"></i>
-                  <span class="fw-bold text-secondary"> Instagram</span>   
-                 </a> 
-                 <div class="post-right"> -->
-                  <!-- <button type="button" class="btn btn-sm btn-success" data-bs-toggle="modal" data-bs-target="#createModal">Create a new post</button> -->
+           
             <!-- Modal for create a new post -->
             <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true">
               <div class="modal-dialog">
@@ -66,6 +59,8 @@
               </div>
           </div>
 
+        
+
             <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="#">Profile</a></li>
               <li><a class="dropdown-item" href="#">Accessibility</a></li>
@@ -77,119 +72,157 @@
           </div>
         </div>
       </nav>
-      <!-- <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">grid icon</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">column</a>
-        </li>
-       -->
-      <!-- </ul> -->
-      <!-- Nav pills -->
-<ul class="nav nav-pills">
-  <li class="nav-item">
-    <a class="nav-link active" data-bs-toggle="pill" href="#home"><i class="fa-solid fa-grid"></i></a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" data-bs-toggle="pill" href="#menu1"><i class="fa-solid fa-square"></i></a>
-  </li>
-  
-</ul>
 
-<!-- Tab panes -->
-<div class="tab-content">
-  <div class="tab-pane container active" id="home">...</div>
-  <div class="tab-pane container fade" id="menu1">...</div>
-  <div class="tab-pane container fade" id="menu2">...</div>
-</div>
-        <div class="container">
-          <div class="row ">
-            <div class="col-4">
-              <div class="card">
-                <div class="card-header">header</div>
-                <div class="card-body">
-                  <img id="photo_one" src="https://www.futuregamereleases.com/wp-content/uploads/2023/03/destiny-2-lightfall-780x470.jpg" class="img-fluid" alt="destiny2"> 
-                </div>
-                <div class="card-footer">footer for captions</div>
+      <div class="container-fluid">  <!-- nav pills -->
+        <nav>
+          <div class="nav nav-pills justify-content-center" id="nav-tab" role="tablist">
+            <a class="nav-link active" id="nav-page1-tab" data-bs-toggle="pill" href="#nav-page1" role="tab" aria-controls="nav-page1" aria-selected="true"><i class="fa-sharp fa-solid fa-grid"></i></a>
+            <a class="nav-link" id="nav-page2-tab" data-bs-toggle="pill" href="#nav-page2" role="tab" aria-controls="nav-page2" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+          </div>
+        </nav>
+      
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-page1" role="tabpanel" aria-labelledby="nav-page1-tab">
+            <div class="container" id="gridLayout">
+              <div class="row">
+                <div class="col-4"><img id="photo_one" src="https://www.futuregamereleases.com/wp-content/uploads/2023/03/destiny-2-lightfall-780x470.jpg" class="image-wrapper" alt="destiny2"></div>
+                <div class="col-4"><img id="photo_two" src="https://www.thesprucepets.com/thmb/ryT9l4hrL00eC9i7D56o9kXl_D0=/1500x0/filters:no_upscale():strip_icc()/french-bulldog-breed-profile-1117966-hero-4f2e84633a854d4c8edf6e1f588aaa64.jpeg" class="img-fluid" alt="frenchie"></div>
+                <div class="col-4"><img id="photo_three" src="https://npr.brightspotcdn.com/ee/4f/75888f8c4d5a95415e6b44f3e491/mixed-up-jupiter-credit-nasa.jpg" class="image-wrapper" alt="jupiter"></div>
+              <div class="row">
+                <div class="col-4"><img id="photo_four" src="https://t3.ftcdn.net/jpg/05/51/74/56/360_F_551745631_QPMgPQLi1uDUJNJm4O1hKTwgfLqQQHoM.jpg" class="image-wrapper" alt="sunrise"></div>
+                  
+                <div class="col-4"><img id="photo_five" src="https://cdn.mos.cms.futurecdn.net/8FXSYkHRGGLNhqKaWGfNLQ.jpg" class="img-fluid" alt="aurora"></div>
+                <div class="col-4"><img id="photo_six" src="https://cdn.getyourguide.com/img/tour/5bc598de061ba.jpeg/146.jpg" class="img-fluid" alt="lipizzaner"></div>
               </div>
-            </div>              
-            <div class="col-4">
-              <div class="card">
-                <div class="card-header">header</div>
-                <div class="card-body">
-                  <img id="photo_two" src="https://www.thesprucepets.com/thmb/ryT9l4hrL00eC9i7D56o9kXl_D0=/1500x0/filters:no_upscale():strip_icc()/french-bulldog-breed-profile-1117966-hero-4f2e84633a854d4c8edf6e1f588aaa64.jpeg" class="img-fluid" alt="frenchie">
-                </div>
-                <div class="card-footer">footer for captions</div>  
-              </div> 
+              <div class="row">  
+                <div class="col-4"><img id="photo_seven" src="https://s.yimg.com/uu/api/res/1.2/YeXpzb4LkroMPqOY6Q.Acg--~B/Zmk9ZmlsbDtoPTU4Mzt3PTg3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-10/8057b010-514f-11ed-bff2-0e3e2b0039b0.cf.jpg" class="img-fluid" alt="resy4"></div>
+                <div class="col-4"><img id="photo_eight" src="https://cdn.britannica.com/83/236683-050-84785C8B/Boston-Terrier-dog.jpg" class="img-fluid" alt="bostonbean"></div>
+                <div class="col-4"><img id="photo_nine" src="https://images.squarespace-cdn.com/content/v1/528d0f42e4b0b3137dcda1ca/1525909647365-ZFU12BQUXL0LSGBP5GQZ/pride1%5B1%5D.png?format=2500w" class="img-fluid" alt="pride"></div>
+              </div>
+              </div>
             </div>
-            <div class="col-4">
+            
+
+          </div>
+          <div class="tab-pane fade" id="nav-page2" role="tabpanel" aria-labelledby="nav-page2-tab">
+            <div class="container mx-auto d-grid gap-3" id="cardColumn">
+              <!-- <div class="row "> -->
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">Eyes up, Guardian!</div>
+                    <div class="card-body">
+                      <img id="photo_one" src="https://www.futuregamereleases.com/wp-content/uploads/2023/03/destiny-2-lightfall-780x470.jpg" class="img-fluid" alt="destiny2"> 
+                    </div>
+                    <div class="card-footer">
+                      <h4>606 Likes</h4>
+                      <p>Destiny, both 1 and 2, have been some of my most heavily played games.  I stopped playing for years and Destiny brought me back which is why it will always have a place in my heart.</p>
+                    </div>
+                  </div>
+                </div>              
+                <div class="col">
+                  <div class="card">
+                    <div class="card-header">Frenchies Rule!</div>
+                    <div class="card-body">
+                      <img id="photo_two" src="https://www.thesprucepets.com/thmb/ryT9l4hrL00eC9i7D56o9kXl_D0=/1500x0/filters:no_upscale():strip_icc()/french-bulldog-breed-profile-1117966-hero-4f2e84633a854d4c8edf6e1f588aaa64.jpeg" class="img-fluid" alt="frenchie">
+                    </div>
+                    <div class="card-footer">
+                      <h4>386 Likes</h4>
+                      <p>This handsome boy looks remarkably like my own little Bub. Muy guapo!</p>
+                    </div>  
+                  </div> 
+                </div>
+            <div class="col">
               <div class="card">
-                <div class="card-header">header</div>
+                <div class="card-header">Best planet to gaze at, fight me.</div>
                 <div class="card-body">
                   <img id="photo_three" src="https://npr.brightspotcdn.com/ee/4f/75888f8c4d5a95415e6b44f3e491/mixed-up-jupiter-credit-nasa.jpg" class="img-fluid" alt="jupiter">
                 </div>
-                <div class="card-footer">footer for caption</div>  
+                <div class="card-footer">
+                  <h4>786 Likes</h4>
+                  <p>I have always loved and been fascinated by Jupiter from an early age. The sheer size and beauty of it are amazing. I have often had dreams with Jupiter in the backdrop.</p>
+                </div>  
               </div>
             </div>
-            <div class="col-4">
+            <div class="col">
               <div class="card">
-                <div class="card-header">header</div>
+                <div class="card-header">Me and who?</div>
                 <div class="card-body">
                   <img id="photo_four" src="https://t3.ftcdn.net/jpg/05/51/74/56/360_F_551745631_QPMgPQLi1uDUJNJm4O1hKTwgfLqQQHoM.jpg" class="img-fluid" alt="sunrise">
                 </div>
-                <div class="card-footer">footer for captions</div>              
+                <div class="card-footer">
+                  <h4>201 Likes</h4>
+                  <p>Would love to wake up to this, might not hate waking up so much lol</p>
+                </div>              
               </div>
             </div>
-            <div class="col-4">
+            <div class="col">
               <div class="card">
-                <div class="card-header">header</div>
+                <div class="card-header">Bucket list</div>
                 <div class="card-body">
                   <img id="photo_five" src="https://cdn.mos.cms.futurecdn.net/8FXSYkHRGGLNhqKaWGfNLQ.jpg" class="img-fluid" alt="aurora">
                 </div>
-                <div class="card-footer">footer for captions</div>              
+                <div class="card-footer">
+                  <h4>301 Likes</h4>
+                  <p>One day this dream will come true...</p>
+                </div>              
               </div>
             </div>
-            <div class="col-4">
+            <div class="col">
               <div class="card">
-                <div class="card-header">header</div>
+                <div class="card-header">Fond memories</div>
                 <div class="card-body">
                   <img id="photo_six" src="https://cdn.getyourguide.com/img/tour/5bc598de061ba.jpeg/146.jpg" class="img-fluid" alt="lipizzaner">
                 </div>
-                <div class="card-footer">footer for captions</div>              
+                <div class="card-footer">
+                  <h4>526 Likes</h4>
+                  <p>Went with my mom to see the Royal Lipizzaner Stallions perform, it was breathtaking</p>
+                </div>              
               </div>
             </div>
-            <div class="col-4">
+            <div class="col">
               <div class="card">
-                <div class="card-header">header</div>
+                <div class="card-header">Resident Evil 4</div>
                 <div class="card-body">
                   <img id="photo_seven" src="https://s.yimg.com/uu/api/res/1.2/YeXpzb4LkroMPqOY6Q.Acg--~B/Zmk9ZmlsbDtoPTU4Mzt3PTg3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-10/8057b010-514f-11ed-bff2-0e3e2b0039b0.cf.jpg" class="img-fluid" alt="resy4">
                 </div>
-                <div class="card-footer">footer for captions</div>              
+                <div class="card-footer">
+                  <h4>420 Likes</h4>
+                  <p>Love that my favorite nostalgia games are being brought up to today's graphical standards!</p>
+                </div>              
               </div>
             </div>
-            <div class="col-4">
+            <div class="col">
               <div class="card">
-                <div class="card-header">header</div>
+                <div class="card-header">I love beans!</div>
                 <div class="card-body">
                   <img id="photo_eight" src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2021_28/1749638/dog-blue-eyes-te-inline-210716.jpg" class="img-fluid" alt="bostonbean">
                 </div>
-                <div class="card-footer">footer for captions</div>              
+                <div class="card-footer">
+                  <h4>317 Likes</h4>
+                  <p>My first dog that was all my own, was a Boston Terrier named Skullie. She was the goodest girl ever.</p>
+                </div>              
               </div>
             </div>
-            <div class="col-4">
+            <div class="col">
               <div class="card">
-                <div class="card-header">header</div>
+                <div class="card-header">Love is love!</div>
                 <div class="card-body">
                   <img id="photo_nine" src="https://images.squarespace-cdn.com/content/v1/528d0f42e4b0b3137dcda1ca/1525909647365-ZFU12BQUXL0LSGBP5GQZ/pride1%5B1%5D.png?format=2500w" class="img-fluid" alt="pride">
                 </div>
-                <div class="card-footer">footer for captions</div>              
+                <div class="card-footer">
+                  <h4>555 Likes</h4>
+                  <p>KWTFYW! Everyone deserves love and fair and equal treatment</p>
+                </div>              
               </div>
             </div>
-
+            </div>
           </div>
-        
-      
+        </div>
+      </div>
+     
+          
+                        
+       
             
                 
             
@@ -208,5 +241,6 @@
       
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    </div>
   </body>
 </html>
