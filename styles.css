@@ -12,19 +12,19 @@ body {
     margin-right: 20%;
 }
 #gridLayout {
-    align-content: center;
     display: grid;
+    grid-template-rows: auto;
     grid-template-columns: auto;
-    row-gap: 28px;
-    column-gap: 25px;
+    gap: 25px;
+ 
 }
-#firstRow {
+/* #firstRow {
     margin-right: 10%;
-}
+} */
 
 #photo_one {
     object-fit: cover;
-    width: 95%;
+    width: 97%;
     height: 100%;
     position: relative;
     aspect-ratio: 1 / 1;
