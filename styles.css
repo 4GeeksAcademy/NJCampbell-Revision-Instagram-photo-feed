@@ -6,17 +6,25 @@
 body {
     background-color: black;
 }
+.wrapper {
+    background-color: white;
+    margin-left: 20%;
+    margin-right: 20%;
+}
 #gridLayout {
+    align-content: center;
     display: grid;
     grid-template-columns: auto;
     row-gap: 28px;
     column-gap: 25px;
 }
-
+#firstRow {
+    margin-right: 10%;
+}
 
 #photo_one {
     object-fit: cover;
-    width: 100%;
+    width: 95%;
     height: 100%;
     position: relative;
     aspect-ratio: 1 / 1;
