@@ -10,7 +10,7 @@ body {
     display: grid;
     grid-template-columns: auto;
     row-gap: 28px;
-    column-gap: 28px;
+    column-gap: 25px;
 }
 
 
