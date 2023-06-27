@@ -26,6 +26,23 @@ body {
     padding: 20px 50px; 
      
 }
+.card-header {
+    display: flex;
+
+}
+.dateField {
+    padding-left: 60%;
+}
+#dateField {
+    padding-left: 65%;
+}
+#dateField2 {
+    padding-left: 40%;
+}
+#floatingTextArea {
+    padding: 5px 10px;
+
+}
 
 #nav-page2 {
     margin-left: 20%;

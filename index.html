@@ -41,19 +41,19 @@
               <div class="modal-dialog">
                   <div class="modal-content">
                       <div class="modal-header">
-                          <h1 class="modal-title fs-5" id="createModalLabel">Create a new post</h1>
+                          <h1 class="modal-title fs-5" id="createModalLabel">Create a new post</h1>                          
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
                       <div class="form-floating">
-                        <textarea class="form-control" placeholder="Add the caption of your post here" id="floatingTextarea"></textarea>
-                        <div class="icons ps-3">
-                          <i class="bi bi-camera"></i>
-                          <i class="bi bi-geo-alt-fill"></i>
+                        <textarea class="form-control" placeholder="Add the caption of your post here" id="floatingTextArea"></textarea>
+                        <div class="icons ps-3" id="iconsPs3">
+                          <i class="fa-solid fa-camera"></i>
+                          <i class="fa-solid fa-location-dot"></i>
                         </div>
                       </div>
                           <div class="modal-footer">
                               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                              <button type="button" class="btn btn-primary">Save changes</button>
+                              <button type="button" class="btn btn-primary">Publish</button>
                           </div>
                   </div>
               </div>
@@ -108,14 +108,16 @@
 <!-- column layout -->
           </div>
           <div class="tab-pane fade" id="nav-page2" role="tabpanel" aria-labelledby="nav-page2-tab">
+        
             <div class="container mx-auto d-grid gap-3" id="cardColumn"> 
               <div class="cardColumnWrapper">               
               
                 <div class="col">
                   <div class="card">
-                    <div class="card-header">Eyes up, Guardian!</div>                  
-                   
-                    
+                    <div class="card-header">
+                      <div>Eyes up, Guardian!</div>
+                      <div class="dateField">06/26</div>
+                    </div>                
                     <div class="card-body">
                       <img id="photo_one" src="https://www.futuregamereleases.com/wp-content/uploads/2023/03/destiny-2-lightfall-780x470.jpg" class="img-fluid" alt="destiny2"> 
                     </div>
@@ -127,7 +129,10 @@
                 </div>              
                 <div class="col">
                   <div class="card">
-                    <div class="card-header">Frenchies Rule!</div>
+                    <div class="card-header">
+                      <div>Frenchies Rule!</div>
+                      <div id="dateField">06/30</div>
+                    </div>
                     <div class="card-body">
                       <img id="photo_two" src="https://images.squarespace-cdn.com/content/v1/5f6b20cbec0c054e23fd93e6/1604489353562-0O3JBOUUB5HDG18DDLY3/champion-line-red-stud-health-tested-5e6fa84b58e77.jpg" class="img-fluid" alt="frenchie">
                     </div>
@@ -140,7 +145,10 @@
               </div>  
             <div class="col">
               <div class="card">
-                <div class="card-header">Best planet to gaze at, fight me.</div>
+                <div class="card-header">
+                  <div class="headCaption">Best planet to gaze at, fight me.</div>
+                  <div id="dateField2">07/01</div>
+                </div>
                 <div class="card-body">
                   <img id="photo_three" src="https://npr.brightspotcdn.com/ee/4f/75888f8c4d5a95415e6b44f3e491/mixed-up-jupiter-credit-nasa.jpg" class="img-fluid" alt="jupiter">
                 </div>
@@ -150,78 +158,8 @@
                 </div>  
               </div>
             </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-header">Me and who?</div>
-                <div class="card-body">
-                  <img id="photo_four" src="https://t3.ftcdn.net/jpg/05/51/74/56/360_F_551745631_QPMgPQLi1uDUJNJm4O1hKTwgfLqQQHoM.jpg" class="img-fluid" alt="sunrise">
-                </div>
-                <div class="card-footer">
-                  <h4>201 Likes</h4>
-                  <p>Would love to wake up to this, might not hate waking up so much lol</p>
-                </div>              
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-header">Bucket list</div>
-                <div class="card-body">
-                  <img id="photo_five" src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Church_of_light.jpg" class="img-fluid" alt="aurora">
-                </div>
-                <div class="card-footer">
-                  <h4>301 Likes</h4>
-                  <p>One day this dream will come true...</p>
-                </div>              
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-header">Fond memories</div>
-                <div class="card-body">
-                  <img id="photo_six" src="https://cdn.getyourguide.com/img/tour/5bc598de061ba.jpeg/146.jpg" class="img-fluid" alt="lipizzaner">
-                </div>
-                <div class="card-footer">
-                  <h4>526 Likes</h4>
-                  <p>Went with my mom to see the Royal Lipizzaner Stallions perform, it was breathtaking</p>
-                </div>              
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-header">Resident Evil 4</div>
-                <div class="card-body">
-                  <img id="photo_seven" src="https://s.yimg.com/uu/api/res/1.2/YeXpzb4LkroMPqOY6Q.Acg--~B/Zmk9ZmlsbDtoPTU4Mzt3PTg3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-10/8057b010-514f-11ed-bff2-0e3e2b0039b0.cf.jpg" class="img-fluid" alt="resy4">
-                </div>
-                <div class="card-footer">
-                  <h4>420 Likes</h4>
-                  <p>Love that my favorite nostalgia games are being brought up to today's graphical standards!</p>
-                </div>              
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-header">I love beans!</div>
-                <div class="card-body">
-                  <img id="photo_eight" src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2021_28/1749638/dog-blue-eyes-te-inline-210716.jpg" class="img-fluid" alt="bostonbean">
-                </div>
-                <div class="card-footer">
-                  <h4>317 Likes</h4>
-                  <p>My first dog that was all my own, was a Boston Terrier named Skullie. She was the goodest girl ever.</p>
-                </div>              
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-header">Love is love!</div>
-                <div class="card-body">
-                  <img id="photo_nine" src="https://images.squarespace-cdn.com/content/v1/528d0f42e4b0b3137dcda1ca/1525909647365-ZFU12BQUXL0LSGBP5GQZ/pride1%5B1%5D.png?format=2500w" class="img-fluid" alt="pride">
-                </div>
-                <div class="card-footer">
-                  <h4>555 Likes</h4>
-                  <p>KWTFYW! Everyone deserves love and fair and equal treatment</p>
-                </div>              
-              </div>
-            </div>
+           
+            
             </div>
           </div>
         </div>
