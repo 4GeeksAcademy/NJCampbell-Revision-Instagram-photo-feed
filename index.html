@@ -6,8 +6,8 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/2360758ebf.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/2360758ebf.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -76,40 +76,46 @@
       <div class="container-fluid">  <!-- nav pills -->
         <nav>
           <div class="nav nav-pills justify-content-center" id="nav-tab" role="tablist">
-            <a class="nav-link active" id="nav-page1-tab" data-bs-toggle="pill" href="#nav-page1" role="tab" aria-controls="nav-page1" aria-selected="true"><i class="fa-sharp fa-solid fa-grid"></i></a>
-            <a class="nav-link" id="nav-page2-tab" data-bs-toggle="pill" href="#nav-page2" role="tab" aria-controls="nav-page2" aria-selected="false"><i class="fa-solid fa-square"></i></a>
+            <button class="nav-link active" id="nav-page1-tab" data-bs-toggle="pill" href="#nav-page1" role="tab" aria-controls="nav-page1" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+              <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"/>
+            </svg></button>
+            <button class="nav-link" id="nav-page2-tab" data-bs-toggle="pill" href="#nav-page2" role="tab" aria-controls="nav-page2" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+              <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+            </svg></button>
           </div>
-        </nav>
-      
+        </nav>      
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-page1" role="tabpanel" aria-labelledby="nav-page1-tab">
-            <div class="container-fluid" id="gridLayout">
-              <div class="row" id="firstRow">
-                <div class="col-4"><img id="photo_one" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQcCWWkH468fGZtPQsgc_UAF60aQb6x4Y2UA&usqp=CAU" class="img-fluid" alt="destiny2"></div>
-                <div class="col-4"><img id="photo_two" src="https://images.squarespace-cdn.com/content/v1/5f6b20cbec0c054e23fd93e6/1604489353562-0O3JBOUUB5HDG18DDLY3/champion-line-red-stud-health-tested-5e6fa84b58e77.jpg" class="img-fluid" alt="frenchie"></div>
+            <div class="container" id="gridLayout">
+              <div class="row mx-2 my-2">
+                <div class="col-4"><img id="photo_one" src="https://www.futuregamereleases.com/wp-content/uploads/2023/03/destiny-2-lightfall-780x470.jpg" class="img-fluid" alt="destiny2"></div>
+                <div class="col-4"><img id="photo_two" src="https://images.squarespace-cdn.com/content/v1/5f6b20cbec0c054e23fd93e6/1604489353562-0O3JBOUUB5HDG18DDLY3/champion-line-red-stud-health-tested-5e6fa84b58e77.jpg" class="img-fluid" alt="frenchie"></div>                
                 <div class="col-4"><img id="photo_three" src="https://npr.brightspotcdn.com/ee/4f/75888f8c4d5a95415e6b44f3e491/mixed-up-jupiter-credit-nasa.jpg" class="img-fluid" alt="jupiter"></div>
-              <div class="row">
+              </div>
+              <div class="row mx-2 my-2">
                 <div class="col-4"><img id="photo_four" src="https://t3.ftcdn.net/jpg/05/51/74/56/360_F_551745631_QPMgPQLi1uDUJNJm4O1hKTwgfLqQQHoM.jpg" class="img-fluid" alt="sunrise"></div>
                   
                 <div class="col-4"><img id="photo_five" src="https://cdn.mos.cms.futurecdn.net/8FXSYkHRGGLNhqKaWGfNLQ.jpg" class="img-fluid" alt="aurora"></div>
                 <div class="col-4"><img id="photo_six" src="https://cdn.getyourguide.com/img/tour/5bc598de061ba.jpeg/146.jpg" class="img-fluid" alt="lipizzaner"></div>
               </div>
-              <div class="row">  
+              <div class="row mx-2 my-2">  
                 <div class="col-4"><img id="photo_seven" src="https://s.yimg.com/uu/api/res/1.2/YeXpzb4LkroMPqOY6Q.Acg--~B/Zmk9ZmlsbDtoPTU4Mzt3PTg3NTthcHBpZD15dGFjaHlvbg--/https://media-mbst-pub-ue1.s3.amazonaws.com/creatr-uploaded-images/2022-10/8057b010-514f-11ed-bff2-0e3e2b0039b0.cf.jpg" class="img-fluid" alt="resy4"></div>
                 <div class="col-4"><img id="photo_eight" src="https://cdn.britannica.com/83/236683-050-84785C8B/Boston-Terrier-dog.jpg" class="img-fluid" alt="bostonbean"></div>
                 <div class="col-4"><img id="photo_nine" src="https://images.squarespace-cdn.com/content/v1/528d0f42e4b0b3137dcda1ca/1525909647365-ZFU12BQUXL0LSGBP5GQZ/pride1%5B1%5D.png?format=2500w" class="img-fluid" alt="pride"></div>
               </div>
               </div>
-            </div>
-            
-
+            </div>            
+<!-- column layout -->
           </div>
           <div class="tab-pane fade" id="nav-page2" role="tabpanel" aria-labelledby="nav-page2-tab">
-            <div class="container mx-auto d-grid gap-3" id="cardColumn">
-              <!-- <div class="row "> -->
+            <div class="container mx-auto d-grid gap-3" id="cardColumn"> 
+              <div class="cardColumnWrapper">               
+              
                 <div class="col">
                   <div class="card">
-                    <div class="card-header">Eyes up, Guardian!</div>
+                    <div class="card-header">Eyes up, Guardian!</div>                  
+                   
+                    
                     <div class="card-body">
                       <img id="photo_one" src="https://www.futuregamereleases.com/wp-content/uploads/2023/03/destiny-2-lightfall-780x470.jpg" class="img-fluid" alt="destiny2"> 
                     </div>
@@ -130,7 +136,8 @@
                       <p>This handsome boy looks remarkably like my own little Bub. Muy guapo!</p>
                     </div>  
                   </div> 
-                </div>
+                <!-- </div> -->
+              </div>  
             <div class="col">
               <div class="card">
                 <div class="card-header">Best planet to gaze at, fight me.</div>
