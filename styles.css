@@ -1,139 +1,140 @@
 .bi-instagram {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 .wrapper {
-    background-color: white;
-    margin-left: 20%;
-    margin-right: 20%;
+  background-color: white;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 #gridLayout {
-    display: grid;    
-    grid-template-rows: auto;
-    grid-template-columns: auto;
-    gap: 25px;
-    padding-top: 20px;    
-}
-.card {
-    margin-bottom: 20px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  gap: 25px;
+  padding-top: 20px;
 }
 
+.card {
+  margin-bottom: 20px;
+}
 #cardColumn {
-    padding: 20px 50px; 
-     
+  padding: 20px 50px;
 }
 .card-header {
-    display: flex;
-
+  display: flex;
 }
+
 .dateField {
-    padding-left: 60%;
+  padding-left: 60%;
 }
 #dateField {
-    padding-left: 65%;
+  padding-left: 65%;
 }
 #dateField2 {
-    padding-left: 40%;
+  padding-left: 40%;
 }
-#floatingTextArea {
-    padding: 5px 10px;
 
+#floatingTextArea {
+  padding: 5px 10px;
+  width: 100%;
+}
+.form-floating {
+  margin: 10px 15px;
+}
+.iconContainer {
+  display: inline-block;
+  border: 1px solid rgb(209, 206, 206);
+  border-radius: 2px;
+  margin-top: 9px;
+  padding: 2px 8px 4px 8px;
 }
 
 #nav-page2 {
-    margin-left: 20%;
-    margin-right: 20%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .nav-pills .nav-link.active {
-    fill: #0d6efd;
-    background-color: unset!important;
+  fill: #0d6efd;
+  background-color: unset !important;
 }
-
 .nav-pills .nav-link {
-    color: unset!important;
+  color: unset !important;
 }
 
 #photo_one {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    aspect-ratio: 1 / 1;    
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  aspect-ratio: 1 / 1;
 }
-
 #photo_two {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    aspect-ratio: 1 / 1;    
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  aspect-ratio: 1 / 1;
 }
-
 #photo_three {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    aspect-ratio: 1 / 1;
-    padding-left: 0%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  aspect-ratio: 1 / 1;
+  padding-left: 0%;
 }
-
 #photo_four {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  aspect-ratio: 1 / 1;
 }
-
 #photo_five {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  aspect-ratio: 1 / 1;
 }
-
 #photo_six {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  aspect-ratio: 1 / 1;
 }
-
 #photo_seven {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  aspect-ratio: 1 / 1;
 }
-
 #photo_eight {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  aspect-ratio: 1 / 1;
 }
-
 #photo_nine {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  aspect-ratio: 1 / 1;
 }
 
 .img {
-    object-fit: contain;
-    max-width: 75%;
-    max-height: auto;
-    align-content: center;
+  object-fit: contain;
+  max-width: 75%;
+  max-height: auto;
+  align-content: center;
 }
