@@ -12,19 +12,16 @@ body {
     margin-right: 20%;
 }
 #gridLayout {
-    display: grid;
+    display: grid;    
     grid-template-rows: auto;
     grid-template-columns: auto;
     gap: 25px;
- 
+    
 }
-/* #firstRow {
-    margin-right: 10%;
-} */
 
 #photo_one {
     object-fit: cover;
-    width: 97%;
+    width: 100%;
     height: 100%;
     position: relative;
     aspect-ratio: 1 / 1;
@@ -46,6 +43,7 @@ body {
     height: 100%;
     position: relative;
     aspect-ratio: 1 / 1;
+    padding-left: 0%;
 }
 #photo_four {
     object-fit: cover;
